@@ -1,60 +1,70 @@
 # Customer Churn & Segment Analysis
 
 ## What This Project Does
-This project analyzes user churn patterns across 
-subscription tiers to identify which customer 
-segments are at highest risk of leaving. The goal 
-is to give product teams clear, actionable data 
-to prioritize retention efforts where they matter most.
 
-## The Business Questions I Answered
-- Which subscription tier has the highest churn rate?
-- What is the overall product retention health?
-- Which user segments need immediate retention 
-  intervention?
+This Excel dashboard tracks user churn and 
+retention performance across subscription 
+plan segments. It helps product and growth 
+teams identify which user segments are at 
+highest risk of churning so retention 
+strategies can be prioritized effectively.
+
+## Business Questions Answered
+
+1. Which subscription plan has the highest 
+   churn rate?
+2. What is the overall retention health 
+   of the product?
+3. Which user segments need immediate 
+   retention intervention?
 
 ## Key Findings
-- **Premium users have only 13% churn** — strong 
-  product-market fit for this segment
-- **Free Tier and Basic users both show 67% churn** 
-  — a critical retention problem
-- Overall churn rate of 45% with 55% average 
-  retention indicates the product retains premium 
-  users well but fails to convert and retain 
-  lower-tier users
-- 9 out of 20 users churned — immediate action 
-  needed on Free Tier onboarding and Basic plan 
-  value proposition
 
-## Product Recommendation
-The data clearly shows a two-tier problem. Premium 
-users are satisfied — the product works for them. 
-Free Tier and Basic users churn at 67% which 
-suggests the value proposition isn't clear enough 
-at lower price points.
+- Premium users have only 13% churn rate 
+  — healthy retention
+- Free Tier users have 67% churn rate 
+  — critical alert
+- Basic plan users have 67% churn rate 
+  — critical alert  
+- Overall churn rate is 45% against 
+  an average retention rate of 55%
+- Free Tier and Basic segments together 
+  account for 89% of all churned users
 
-**Recommended actions:**
-- Improve Free Tier onboarding flow
-- Add feature discovery nudges for Basic users
-- Investigate what Premium users love and 
-  replicate that experience downmarket
+## Business Recommendation
+
+Free Tier and Basic plan users are churning 
+at 5x the rate of Premium users. Product 
+team should investigate:
+- What features are Premium users accessing 
+  that Free/Basic users are not?
+- Is the value gap between plans too wide?
+- Would a mid-tier plan reduce churn 
+  from Free/Basic users?
 
 ## Tech Stack
-- **Microsoft Excel** — dashboard, KPI tracking, 
-  churn rate calculations, conditional formatting
-- Subscription behavioral dataset — user cohort 
-  and retention data
+
+- Microsoft Excel — dashboard design, 
+  conditional formatting, KPI tracking
+- Churn rate formula: 
+  Churned Users / Total Segment Users
+- Retention Health Status — automated 
+  conditional formatting rules:
+  Below 30% churn = Optimal Retention
+  Above 50% churn = Critical Churn Alert
 
 ## Dashboard Features
-- KPI summary cards — Total Users, Active Cohorts, 
-  Avg Retention Rate
-- Segment table with calculated churn rates
-- Color-coded Retention Health Status — green for 
-  optimal, red for critical alert
-- Subscription tier breakdown for targeted 
-  retention strategy
+
+- Total Portfolio Users KPI card
+- Overall Active Cohorts counter
+- Average Retention Rate display
+- Subscription segment breakdown table
+- Automated Retention Health Status 
+  with color coding
+- Calculated churn rate per segment
 
 ## Status
-Expanding to include monthly cohort retention 
-curves and feature usage correlation with 
-churn probability.
+
+Expanding to include monthly cohort 
+retention curves and time-series churn 
+trend analysis.
